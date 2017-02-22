@@ -19,8 +19,6 @@
 		F6C510651D8669DA001EB536 /* H264HWEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C510601D8669DA001EB536 /* H264HWEncoder.m */; };
 		F6C510661D8669DA001EB536 /* H264Packet.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C510621D8669DA001EB536 /* H264Packet.m */; };
 		F6C510711D880B76001EB536 /* CameraEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C510701D880B76001EB536 /* CameraEncoder.m */; };
-		F6C510791D88D595001EB536 /* RTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C510751D88D595001EB536 /* RTPClient.m */; };
-		F6C5107A1D88D595001EB536 /* RTSPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C510781D88D595001EB536 /* RTSPClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +45,6 @@
 		F6C510621D8669DA001EB536 /* H264Packet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264Packet.m; sourceTree = "<group>"; };
 		F6C5106F1D880B76001EB536 /* CameraEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraEncoder.h; sourceTree = "<group>"; };
 		F6C510701D880B76001EB536 /* CameraEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraEncoder.m; sourceTree = "<group>"; };
-		F6C510741D88D595001EB536 /* RTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPClient.h; sourceTree = "<group>"; };
-		F6C510751D88D595001EB536 /* RTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPClient.m; sourceTree = "<group>"; };
-		F6C510771D88D595001EB536 /* RTSPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPClient.h; sourceTree = "<group>"; };
-		F6C510781D88D595001EB536 /* RTSPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +78,6 @@
 		F6C5102C1D858306001EB536 /* EasyCapture */ = {
 			isa = PBXGroup;
 			children = (
-				F6C510731D88D595001EB536 /* RTP */,
-				F6C510761D88D595001EB536 /* RTSP */,
 				F6C510491D865516001EB536 /* Encoder */,
 				F6C510441D858319001EB536 /* EasyPusher */,
 				F6C510301D858306001EB536 /* AppDelegate.h */,
@@ -143,24 +135,6 @@
 			);
 			path = Codec;
 			sourceTree = "<group>";
-		};
-		F6C510731D88D595001EB536 /* RTP */ = {
-			isa = PBXGroup;
-			children = (
-				F6C510741D88D595001EB536 /* RTPClient.h */,
-				F6C510751D88D595001EB536 /* RTPClient.m */,
-			);
-			path = RTP;
-			sourceTree = SOURCE_ROOT;
-		};
-		F6C510761D88D595001EB536 /* RTSP */ = {
-			isa = PBXGroup;
-			children = (
-				F6C510771D88D595001EB536 /* RTSPClient.h */,
-				F6C510781D88D595001EB536 /* RTSPClient.m */,
-			);
-			path = RTSP;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -233,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C510651D8669DA001EB536 /* H264HWEncoder.m in Sources */,
-				F6C510791D88D595001EB536 /* RTPClient.m in Sources */,
 				F6C510661D8669DA001EB536 /* H264Packet.m in Sources */,
 				F6C510351D858306001EB536 /* ViewController.m in Sources */,
 				F6C510711D880B76001EB536 /* CameraEncoder.m in Sources */,
@@ -241,7 +214,6 @@
 				F6C510641D8669DA001EB536 /* H264HWDecoder.m in Sources */,
 				F6C510321D858306001EB536 /* AppDelegate.m in Sources */,
 				F6C5102F1D858306001EB536 /* main.m in Sources */,
-				F6C5107A1D88D595001EB536 /* RTSPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
